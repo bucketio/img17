@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111c33"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6d28d9"/>
+      <stop offset="0.5" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+
+    <style>
+      .font { font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif; }
+      .title { font-size: 44px; font-weight: 800; letter-spacing: 1px; fill: #ffffff; }
+      .sectionTitle { font-size: 28px; font-weight: 800; fill: #0b1220; }
+      .years { font-size: 18px; font-weight: 700; opacity: 0.85; }
+      .bullet { font-size: 20px; font-weight: 600; fill: #0b1220; opacity: 0.95; }
+      .pillText { font-size: 18px; font-weight: 700; fill: #ffffff; }
+      .small { font-size: 16px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="720" fill="url(#bg)"/>
+
+  <!-- Card -->
+  <rect x="70" y="50" rx="28" ry="28" width="1060" height="620" fill="#0f172a" opacity="0.92" filter="url(#shadow)"/>
+  <rect x="70" y="50" rx="28" ry="28" width="1060" height="620" fill="none" stroke="#24314f" stroke-width="2"/>
+
+  <!-- Title bar -->
+  <rect x="95" y="75" rx="20" ry="20" width="1010" height="95" fill="url(#titleGrad)"/>
+  <text x="600" y="135" text-anchor="middle" class="font title">.NET EVRİMİ</text>
+
+  <!-- Timeline line -->
+  <line x1="170" y1="205" x2="1030" y2="205" stroke="#334155" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="240" cy="205" r="10" fill="#60a5fa"/>
+  <circle cx="600" cy="205" r="10" fill="#34d399"/>
+  <circle cx="960" cy="205" r="10" fill="#f472b6"/>
+
+  <!-- Section 1: .NET Framework -->
+  <g>
+    <rect x="110" y="245" width="980" height="130" rx="22" ry="22" fill="#e0f2fe"/>
+    <rect x="110" y="245" width="14" height="130" rx="7" ry="7" fill="#2563eb"/>
+    <text x="150" y="285" class="font sectionTitle">.NET Framework</text>
+    <text x="420" y="285" class="font years" fill="#1f2937">(2002–2022)</text>
+
+    <!-- Pills -->
+    <g>
+      <rect x="840" y="260" width="210" height="32" rx="16" ry="16" fill="#2563eb" opacity="0.95"/>
+      <text x="945" y="282" text-anchor="middle" class="font pillText">Son sürüm: 4.8.1</text>
+    </g>
+
+    <!-- Bullets -->
+    <text x="150" y="323" class="font bullet">• Sadece Windows</text>
+    <text x="150" y="350" class="font bullet">• Monolitik yapı</text>
+  </g>
+
+  <!-- Section 2: .NET Core -->
+  <g>
+    <rect x="110" y="395" width="980" height="150" rx="22" ry="22" fill="#dcfce7"/>
+    <rect x="110" y="395" width="14" height="150" rx="7" ry="7" fill="#16a34a"/>
+    <text x="150" y="435" class="font sectionTitle">.NET Core</text>
+    <text x="330" y="435" class="font years" fill="#1f2937">(2016–2020)</text>
+
+    <!-- Pills -->
+    <g>
+      <rect x="850" y="410" width="200" height="32" rx="16" ry="16" fill="#16a34a" opacity="0.95"/>
+      <text x="950" y="432" text-anchor="middle" class="font pillText">Son sürüm: 3.1</text>
+    </g>
+
+    <!-- Bullets -->
+    <text x="150" y="473" class="font bullet">• Cross-platform (Windows, Linux, macOS)</text>
+    <text x="150" y="500" class="font bullet">• Modüler, hafif</text>
+    <text x="150" y="527" class="font bullet">• Açık kaynak</text>
+  </g>
+
+  <!-- Section 3: .NET 5+ -->
+  <g>
+    <rect x="110" y="565" width="980" height="95" rx="22" ry="22" fill="#fae8ff"/>
+    <rect x="110" y="565" width="14" height="95" rx="7" ry="7" fill="#a21caf"/>
+    <text x="150" y="605" class="font sectionTitle">.NET 5+</text>
+    <text x="265" y="605" class="font years" fill="#1f2937">(2020–şimdi)</text>
+
+    <!-- Pills -->
+    <g>
+      <rect x="760" y="580" width="290" height="32" rx="16" ry="16" fill="#a21caf" opacity="0.95"/>
+      <text x="905" y="602" text-anchor="middle" class="font pillText">Güncel sürümler: .NET 6, 7, 8</text>
+    </g>
+
+    <!-- Bullets -->
+    <text x="150" y="643" class="font bullet small">• .NET Framework ve Core birleşimi  • Tek platform  • Modern, performanslı</text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="600" y="695" text-anchor="middle" class="font small" fill="#94a3b8">
+    İpucu: SVG’yi tarayıcıda açıp “Yazdır &gt; PDF” veya Inkscape ile PNG’ye dönüştürebilirsin.
+  </text>
+</svg>
