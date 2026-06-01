@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <style>
+    .title{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',Arial,sans-serif;font-size:42px;font-weight:750;fill:#111827;letter-spacing:0}
+    .sub{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',Arial,sans-serif;font-size:22px;fill:#475569;letter-spacing:0}
+    .label{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',Arial,sans-serif;font-size:24px;font-weight:700;fill:#111827;letter-spacing:0}
+    .small{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',Arial,sans-serif;font-size:18px;fill:#475569;letter-spacing:0}
+    .tiny{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',Arial,sans-serif;font-size:15px;fill:#64748b;letter-spacing:0}
+  </style>
+  <text x="70" y="72" class="title">价值链重排：谁会掌握垂直硅算力密度</text>
+  <text x="70" y="112" class="sub">阅读任务：把论文机制翻译成未来可投资的工艺、设备、EDA 与架构变量</text>
+  
+  <rect x="80" y="170" width="250" height="360" rx="14" fill="#ffffff" stroke="#d6dee8" stroke-width="1.5"/>
+  <text x="115" y="225" class="label">材料与膜转移</text>
+  <text x="115" y="272" class="small">单晶硅纳米膜</text><text x="115" y="308" class="small">释放、贴合、应力控制</text><text x="115" y="344" class="small">良率统计</text>
+  <line x1="340" y1="350" x2="455" y2="350" stroke="#475569" stroke-width="4" stroke-linecap="round"/><polygon points="455,350 441,357 441,343" fill="#475569"/>
+  <rect x="470" y="170" width="250" height="360" rx="14" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="505" y="225" class="label">低温晶体管工艺</text>
+  <text x="505" y="272" class="small">激光退火</text><text x="505" y="308" class="small">层间介质</text><text x="505" y="344" class="small">垂直互连</text>
+  <line x1="730" y1="350" x2="845" y2="350" stroke="#475569" stroke-width="4" stroke-linecap="round"/><polygon points="845,350 831,357 831,343" fill="#475569"/>
+  <rect x="860" y="170" width="340" height="360" rx="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="895" y="225" class="label">架构与EDA协同</text>
+  <text x="895" y="272" class="small">逻辑/存储近距离耦合</text><text x="895" y="308" class="small">热管理与布线规则</text><text x="895" y="344" class="small">面向AI芯片的垂直设计库</text>
+  <path d="M205 575 C420 625 780 625 1030 575" fill="none" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+  <text x="350" y="650" class="tiny">利润迁移：从单纯买先进制程，转向谁能定义垂直器件、互连和架构的联合设计规则。</text>
+</svg>
