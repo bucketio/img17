@@ -1,0 +1,27 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">16GB 和 32GB 内存差异封面</title>
+  <desc id="desc">对比 16GB 和 32GB 内存在普通办公、多任务和重度使用中的体验差异</desc>
+  <rect width="1200" height="820" fill="#f8fafc"/>
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <text x="70" y="98" fill="#111827" font-size="50" font-weight="700">内存 16GB 和 32GB，差别有多大？</text>
+    <text x="72" y="152" fill="#475569" font-size="25">不是速度快一倍，而是多任务时更有余量</text>
+    <g transform="translate(110 245)">
+      <rect width="430" height="300" rx="28" fill="#ffffff" stroke="#d1d5db"/>
+      <text x="50" y="70" fill="#111827" font-size="42" font-weight="700">16GB</text>
+      <text x="50" y="112" fill="#64748b" font-size="24">普通办公的舒服起点</text>
+      <rect x="50" y="160" width="310" height="42" rx="12" fill="#2563eb"/>
+      <rect x="50" y="220" width="210" height="42" rx="12" fill="#93c5fd"/>
+    </g>
+    <g transform="translate(660 245)">
+      <rect width="430" height="300" rx="28" fill="#ffffff" stroke="#d1d5db"/>
+      <text x="50" y="70" fill="#111827" font-size="42" font-weight="700">32GB</text>
+      <text x="50" y="112" fill="#64748b" font-size="24">重度多任务的安全余量</text>
+      <rect x="50" y="160" width="330" height="42" rx="12" fill="#0f766e"/>
+      <rect x="50" y="220" width="300" height="42" rx="12" fill="#5eead4"/>
+    </g>
+    <g transform="translate(214 610)">
+      <rect width="772" height="92" rx="22" fill="#111827"/>
+      <text x="386" y="58" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700">关键不是容量越大越好，而是你的任务会不会把内存吃满</text>
+    </g>
+  </g>
+</svg>
