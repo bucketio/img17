@@ -1,0 +1,80 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400">
+  <rect width="700" height="400" fill="#f8f9fa" rx="8"/>
+  <rect x="0" y="0" width="700" height="400" fill="none" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="350" y="25" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">传统方式 vs 獴探方式 全流程对比</text>
+  
+  <!-- Traditional side -->
+  <g transform="translate(15, 40)">
+    <rect x="0" y="0" width="330" height="160" rx="8" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+    <rect x="0" y="0" width="330" height="32" rx="8" fill="#999"/>
+    <rect x="0" y="16" width="330" height="16" fill="#999"/>
+    <text x="165" y="22" text-anchor="middle" font-family="'Microsoft YaHei',sans-serif" font-size="13" font-weight="bold" fill="#fff">传统方式 3-5天</text>
+    
+    <g transform="translate(15, 45)">
+      <rect x="0" y="0" width="300" height="22" rx="4" fill="#e0e0e0"/>
+      <text x="10" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#555">① 手动搜索政策文件、下载、整理</text>
+    </g>
+    <g transform="translate(15, 72)">
+      <rect x="0" y="0" width="300" height="22" rx="4" fill="#e0e0e0"/>
+      <text x="10" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#555">② 从零搭建或套用旧模板</text>
+    </g>
+    <g transform="translate(15, 99)">
+      <rect x="0" y="0" width="300" height="22" rx="4" fill="#e0e0e0"/>
+      <text x="10" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#555">③ 逐章逐节手动撰写、反复修改</text>
+    </g>
+    <g transform="translate(15, 126)">
+      <rect x="0" y="0" width="300" height="22" rx="4" fill="#e0e0e0"/>
+      <text x="10" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#555">④ 手动排版、人工逐条合规自查</text>
+    </g>
+  </g>
+  
+  <!-- AI side -->
+  <g transform="translate(355, 40)">
+    <rect x="0" y="0" width="330" height="160" rx="8" fill="#e8f0fe" stroke="#1a6bff" stroke-width="1.5"/>
+    <rect x="0" y="0" width="330" height="32" rx="8" fill="#1a6bff"/>
+    <rect x="0" y="16" width="330" height="16" fill="#1a6bff"/>
+    <text x="165" y="22" text-anchor="middle" font-family="'Microsoft YaHei',sans-serif" font-size="13" font-weight="bold" fill="#fff">獴探方式 约3-4小时</text>
+    
+    <g transform="translate(15, 45)">
+      <rect x="0" y="0" width="300" height="22" rx="4" fill="#c8e6ff"/>
+      <text x="10" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#1a6bff">① AI自动检索政策库+案例库</text>
+    </g>
+    <g transform="translate(15, 72)">
+      <rect x="0" y="0" width="300" height="22" rx="4" fill="#c8e6ff"/>
+      <text x="10" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#1a6bff">② AI自动生成标准化大纲</text>
+    </g>
+    <g transform="translate(15, 99)">
+      <rect x="0" y="0" width="300" height="22" rx="4" fill="#ffd4b8"/>
+      <text x="10" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#ff6b35">③ AI生成完整初稿 → 人工精修（关键）</text>
+    </g>
+    <g transform="translate(15, 126)">
+      <rect x="0" y="0" width="300" height="22" rx="4" fill="#c8e6ff"/>
+      <text x="10" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#1a6bff">④ 自动排版 + 合规校验 → 一键导出</text>
+    </g>
+  </g>
+  
+  <!-- Total time comparison -->
+  <g transform="translate(15, 220)">
+    <text x="0" y="15" font-family="'Microsoft YaHei',sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">总耗时对比</text>
+    
+    <rect x="0" y="25" width="300" height="30" rx="6" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+    <text x="10" y="45" font-family="'Microsoft YaHei',sans-serif" font-size="13" fill="#555">传统方式</text>
+    <text x="280" y="45" text-anchor="end" font-family="sans-serif" font-size="18" font-weight="bold" fill="#999">3-5天</text>
+    
+    <rect x="340" y="25" width="300" height="30" rx="6" fill="#e8f0fe" stroke="#1a6bff" stroke-width="1"/>
+    <text x="350" y="45" font-family="'Microsoft YaHei',sans-serif" font-size="13" fill="#1a6bff">獴探方式</text>
+    <text x="620" y="45" text-anchor="end" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1a6bff">约3-4h</text>
+    
+    <text x="327" y="43" font-family="sans-serif" font-size="20" fill="#2e7d32">→</text>
+  </g>
+  
+  <g transform="translate(180, 280)">
+    <rect x="0" y="0" width="340" height="50" rx="25" fill="#2e7d32" opacity="0.1"/>
+    <text x="170" y="20" text-anchor="middle" font-family="'Microsoft YaHei',sans-serif" font-size="16" font-weight="bold" fill="#2e7d32">效率提升约 90%</text>
+    <text x="170" y="40" text-anchor="middle" font-family="'Microsoft YaHei',sans-serif" font-size="11" fill="#555">AI生成初稿1小时 + 人工精修2-3小时</text>
+  </g>
+  
+  <text x="350" y="365" text-anchor="middle" font-family="'Microsoft YaHei',sans-serif" font-size="10" fill="#888">注：大型复杂项目精修时间增加，但AI生成初稿环节不受项目规模影响</text>
+  
+  <text x="690" y="392" text-anchor="end" font-family="sans-serif" font-size="9" fill="#aaa">来源：獴探产品内部测试数据</text>
+</svg>
