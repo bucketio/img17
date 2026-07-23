@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">银狐防护清单</title>
+  <desc id="desc">银狐防护需要入口管控、权限控制、终端防护、网络监控、财务流程和安全培训。</desc>
+  <rect width="900" height="430" fill="#fbfcff"/>
+  <text x="48" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#182033">防护重点：先管住入口</text>
+  <g font-family="Arial, sans-serif" font-size="20">
+    <rect x="70" y="120" width="350" height="64" rx="18" fill="#edf5ff"/>
+    <text x="105" y="160" fill="#2f6bd9" font-weight="700">陌生文件先确认来源</text>
+    <rect x="480" y="120" width="350" height="64" rx="18" fill="#e8f7ef"/>
+    <text x="515" y="160" fill="#24704d" font-weight="700">开启扩展名显示</text>
+    <rect x="70" y="205" width="350" height="64" rx="18" fill="#fff5df"/>
+    <text x="105" y="245" fill="#946200" font-weight="700">减少本地管理员权限</text>
+    <rect x="480" y="205" width="350" height="64" rx="18" fill="#f6f7fb"/>
+    <text x="515" y="245" fill="#334155" font-weight="700">部署可信 EDR/杀毒</text>
+    <rect x="70" y="290" width="350" height="64" rx="18" fill="#ffffff" stroke="#d9deea"/>
+    <text x="105" y="330" fill="#334155" font-weight="700">财务转账二次确认</text>
+    <rect x="480" y="290" width="350" height="64" rx="18" fill="#ffffff" stroke="#d9deea"/>
+    <text x="515" y="330" fill="#334155" font-weight="700">关注异常外联</text>
+  </g>
+</svg>
