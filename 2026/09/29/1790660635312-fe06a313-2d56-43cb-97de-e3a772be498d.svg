@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="452" viewBox="0 0 680 452">
+  <title>脚本约定通道:下行触发与上行回传</title>
+  <desc>Warlock 武器与传感器控制的脚本约定通道:下行方向摇杆按键触发平台同名脚本,上行方向插件按 20 Hz 与 1 Hz 周期查询脚本并将返回值填入 HUD 数据容器;外控平台的脚本调用转为 XIO 报文发往宿主端。</desc>
+
+  <!-- 背景 -->
+  <rect x="0" y="0" width="680" height="452" fill="#ffffff"/>
+
+  <!-- 上半区:下行 -->
+  <text x="24" y="30" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1d5f8a">下行 · 按键触发脚本(机型逻辑在场景侧)</text>
+
+  <rect x="24" y="44" width="190" height="104" rx="10" fill="#fafbfc" stroke="#e0e3e7" stroke-width="1"/>
+  <text x="119" y="68" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">摇杆按键</text>
+  <text x="119" y="90" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">trigger_fire</text>
+  <text x="119" y="108" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">weapon_release · master_arm</text>
+  <text x="119" y="126" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">radar_power · chaff_release</text>
+
+  <line x1="214" y1="96" x2="246" y2="96" stroke="#1d5f8a" stroke-width="1.6"/>
+  <polygon points="250,96 242,92 242,100" fill="#1d5f8a"/>
+  <text x="232" y="84" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">按下</text>
+
+  <rect x="250" y="44" width="190" height="104" rx="10" fill="#eef4f9" stroke="#1d5f8a" stroke-width="1.2"/>
+  <text x="345" y="68" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1d5f8a">Joystick 插件</text>
+  <text x="345" y="90" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">在平台上下文</text>
+  <text x="345" y="108" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">执行「约定名」脚本</text>
+  <text x="345" y="130" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">无专用 C++ 指令</text>
+
+  <line x1="440" y1="96" x2="472" y2="96" stroke="#1d5f8a" stroke-width="1.6"/>
+  <polygon points="476,96 468,92 468,100" fill="#1d5f8a"/>
+  <text x="458" y="84" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">调用</text>
+
+  <rect x="476" y="44" width="180" height="104" rx="10" fill="#fafbfc" stroke="#e0e3e7" stroke-width="1"/>
+  <text x="566" y="68" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">平台脚本(场景实现)</text>
+  <text x="566" y="90" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">TriggerPulled() 开火</text>
+  <text x="566" y="108" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">MasterArmToggle() 主保险</text>
+  <text x="566" y="126" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">机型逻辑留在场景侧</text>
+
+  <line x1="24" y1="176" x2="656" y2="176" stroke="#e0e3e7" stroke-width="1"/>
+
+  <!-- 下半区:上行 -->
+  <text x="24" y="206" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1d5f8a">上行 · 周期数据回传(脚本返回状态)</text>
+
+  <rect x="24" y="220" width="190" height="104" rx="10" fill="#eef4f9" stroke="#1d5f8a" stroke-width="1.2"/>
+  <text x="119" y="244" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1d5f8a">Joystick 插件(发起)</text>
+  <text x="119" y="266" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">20 Hz:雷达 · 武器</text>
+  <text x="119" y="284" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">位包标志 · 弹药余量</text>
+  <text x="119" y="306" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">1 Hz:备用油量</text>
+
+  <line x1="214" y1="272" x2="246" y2="272" stroke="#1d5f8a" stroke-width="1.6"/>
+  <polygon points="250,272 242,268 242,276" fill="#1d5f8a"/>
+  <text x="232" y="260" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">周期调用</text>
+
+  <rect x="250" y="220" width="190" height="104" rx="10" fill="#fafbfc" stroke="#e0e3e7" stroke-width="1"/>
+  <text x="345" y="244" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">平台脚本(约定名)</text>
+  <text x="345" y="266" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">ReturnBitPackedFlags()</text>
+  <text x="345" y="284" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">NumChaffRemaining() 等</text>
+  <text x="345" y="306" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">场景作者决定返回内容</text>
+
+  <line x1="440" y1="272" x2="472" y2="272" stroke="#1d5f8a" stroke-width="1.6"/>
+  <polygon points="476,272 468,268 468,276" fill="#1d5f8a"/>
+  <text x="458" y="260" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">返回填入</text>
+
+  <rect x="476" y="220" width="180" height="104" rx="10" fill="#fafbfc" stroke="#e0e3e7" stroke-width="1"/>
+  <text x="566" y="244" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">HUD 数据容器</text>
+  <text x="566" y="266" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">可射击 · Break-X</text>
+  <text x="566" y="284" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">主保险 · 主警告</text>
+  <text x="566" y="302" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">箔条 / 红外弹余量</text>
+  <text x="566" y="320" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">直接驱动告警显示</text>
+
+  <!-- 底注 -->
+  <rect x="24" y="356" width="632" height="56" rx="10" fill="#f3f8fb" stroke="#1d5f8a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="340" y="380" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="600" fill="#1d5f8a">若平台被外部系统(XIO / DIS)控制,脚本调用转为 WsfXIO_ScriptExecutePkt 发往宿主端</text>
+  <text x="340" y="400" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" fill="#4a5158">外控平台的「人控」,只剩远端脚本一条路——约定的通用性由此可见</text>
+</svg>
