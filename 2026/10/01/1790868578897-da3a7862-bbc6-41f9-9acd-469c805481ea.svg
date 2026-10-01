@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 870" width="760" height="870">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0F766E"/><stop offset="100%" stop-color="#2DD4BF"/>
+  </linearGradient>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/>
+  </linearGradient>
+  <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#6D28D9"/><stop offset="100%" stop-color="#A78BFA"/>
+  </linearGradient>
+  <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#C2410C"/><stop offset="100%" stop-color="#FB923C"/>
+  </linearGradient>
+  <filter id="shadowSm">
+    <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/>
+  </marker>
+</defs>
+
+<rect width="760" height="870" fill="#F8FAFC"/>
+
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">一次对话,穿过四层</text>
+<text x="380" y="76" font-size="14" fill="#64748B" text-anchor="middle">新版 OpenClaw 里,provider、model、runtime、channel 各管一件事</text>
+
+<!-- Band 1: Channel -->
+<g filter="url(#shadowSm)">
+  <rect x="40" y="110" width="200" height="120" rx="14" fill="url(#gTeal)"/>
+  <rect x="252" y="110" width="468" height="120" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+</g>
+<text x="140" y="165" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Channel</text>
+<text x="140" y="192" font-size="13" fill="#CCFBF1" text-anchor="middle">渠道</text>
+<text x="272" y="146" font-size="15" font-weight="700" fill="#0F172A">消息从哪里进来,回复往哪里出去</text>
+<text x="272" y="170" font-size="13" fill="#64748B">渠道投递这件事,两种 runtime 下都由 OpenClaw 自己负责</text>
+<g class="mono" font-size="12" text-anchor="middle" fill="#0F766E">
+  <rect x="272" y="190" width="75" height="26" rx="13" fill="#F0FDFA" stroke="#5EEAD4"/><text x="309.5" y="207">Discord</text>
+  <rect x="357" y="190" width="62" height="26" rx="13" fill="#F0FDFA" stroke="#5EEAD4"/><text x="388" y="207">Slack</text>
+  <rect x="429" y="190" width="82" height="26" rx="13" fill="#F0FDFA" stroke="#5EEAD4"/><text x="470" y="207">Telegram</text>
+  <rect x="521" y="190" width="82" height="26" rx="13" fill="#F0FDFA" stroke="#5EEAD4"/><text x="562" y="207">WhatsApp</text>
+</g>
+
+<line x1="140" y1="232" x2="140" y2="256" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- Band 2: Provider -->
+<g filter="url(#shadowSm)">
+  <rect x="40" y="260" width="200" height="120" rx="14" fill="url(#gBlue)"/>
+  <rect x="252" y="260" width="468" height="120" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+</g>
+<text x="140" y="315" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Provider</text>
+<text x="140" y="342" font-size="13" fill="#DBEAFE" text-anchor="middle">模型提供方</text>
+<text x="272" y="296" font-size="15" font-weight="700" fill="#0F172A">怎么认证、怎么发现模型、模型引用叫什么</text>
+<text x="272" y="320" font-size="13" fill="#64748B">决定 model ref 的写法,比如 openai/gpt-5.6-sol 里斜杠前面那段</text>
+<g class="mono" font-size="12" text-anchor="middle" fill="#1E40AF">
+  <rect x="272" y="340" width="90" height="26" rx="13" fill="#EFF6FF" stroke="#93C5FD"/><text x="317" y="357">anthropic</text>
+  <rect x="372" y="340" width="68" height="26" rx="13" fill="#EFF6FF" stroke="#93C5FD"/><text x="406" y="357">openai</text>
+  <rect x="450" y="340" width="125" height="26" rx="13" fill="#EFF6FF" stroke="#93C5FD"/><text x="512.5" y="357">github-copilot</text>
+</g>
+
+<line x1="140" y1="382" x2="140" y2="406" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- Band 3: Model -->
+<g filter="url(#shadowSm)">
+  <rect x="40" y="410" width="200" height="120" rx="14" fill="url(#gPurple)"/>
+  <rect x="252" y="410" width="468" height="120" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+</g>
+<text x="140" y="465" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Model</text>
+<text x="140" y="492" font-size="13" fill="#EDE9FE" text-anchor="middle">模型</text>
+<text x="272" y="446" font-size="15" font-weight="700" fill="#0F172A">这一轮选用哪个模型</text>
+<text x="272" y="470" font-size="13" fill="#64748B">选的是模型本身,谁来驱动它跑,是下一层的事</text>
+<g class="mono" font-size="12" text-anchor="middle" fill="#5B21B6">
+  <rect x="272" y="490" width="132" height="26" rx="13" fill="#F5F3FF" stroke="#C4B5FD"/><text x="338" y="507">claude-opus-4-6</text>
+  <rect x="414" y="490" width="104" height="26" rx="13" fill="#F5F3FF" stroke="#C4B5FD"/><text x="466" y="507">gpt-5.6-sol</text>
+</g>
+
+<line x1="140" y1="532" x2="140" y2="556" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- Band 4: Runtime -->
+<g filter="url(#shadowSm)">
+  <rect x="40" y="560" width="200" height="120" rx="14" fill="url(#gOrange)"/>
+  <rect x="252" y="560" width="468" height="120" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+</g>
+<text x="140" y="615" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agent runtime</text>
+<text x="140" y="642" font-size="13" fill="#FFEDD5" text-anchor="middle">智能体运行时</text>
+<text x="272" y="596" font-size="15" font-weight="700" fill="#0F172A">谁来驱动这一轮的模型循环</text>
+<text x="272" y="620" font-size="13" fill="#64748B">接过 prompt、跑模型输出、处理原生工具调用,再把结果交回 OpenClaw</text>
+<g class="mono" font-size="12" text-anchor="middle" fill="#9A3412">
+  <rect x="272" y="640" width="82" height="26" rx="13" fill="#FFF7ED" stroke="#FDBA74"/><text x="313" y="657">openclaw</text>
+  <rect x="364" y="640" width="62" height="26" rx="13" fill="#FFF7ED" stroke="#FDBA74"/><text x="395" y="657">codex</text>
+  <rect x="436" y="640" width="75" height="26" rx="13" fill="#FFF7ED" stroke="#FDBA74"/><text x="473.5" y="657">copilot</text>
+  <rect x="521" y="640" width="96" height="26" rx="13" fill="#FFF7ED" stroke="#FDBA74"/><text x="569" y="657">claude-cli</text>
+</g>
+
+<!-- Real example strip -->
+<g filter="url(#shadowSm)">
+  <rect x="40" y="716" width="680" height="120" rx="14" fill="#0F172A"/>
+</g>
+<text x="64" y="746" font-size="13" font-weight="700" fill="#FBBF24">mbp 控制台里的真实一行</text>
+<text class="mono" x="64" y="776" font-size="15" fill="#F8FAFC">主模型  openai/gpt-5.6-sol        运行时  codex</text>
+<text x="64" y="800" font-size="12.5" fill="#94A3B8">provider = openai,model = gpt-5.6-sol,runtime = codex。</text>
+<text x="64" y="818" font-size="12.5" fill="#94A3B8">model ref 里没有 runtime 这一段,控制台把两者分开显示。</text>
+</svg>
