@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 798" width="760" height="798">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/></linearGradient>
+  <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C2410C"/><stop offset="100%" stop-color="#FB923C"/></linearGradient>
+  <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#15803D"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient>
+  <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6D28D9"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient>
+  <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#94A3B8"/></linearGradient>
+  <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0F766E"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient>
+  <filter id="shadowSm"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/></filter>
+  <marker id="arr_gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/></marker>
+  <marker id="arr_green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker>
+  <marker id="arr_blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker>
+  <marker id="arr_orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#F97316"/></marker>
+  <marker id="arr_red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker>
+</defs>
+<rect width="760" height="798" fill="#F8FAFC"/>
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">上下文引擎:一轮对话里被调用的时机</text>
+<text x="380" y="76" font-size="14" font-weight="400" fill="#64748B" text-anchor="middle">内置的 legacy 引擎可以换成插件,接口是同一套</text>
+<rect x="40" y="110" width="160" height="96" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text class="mono" x="120.0" y="142" font-size="14" font-weight="800" fill="#1E40AF" text-anchor="middle">bootstrap</text>
+<text x="120.0" y="168" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">会话首次接入</text>
+<text x="120.0" y="188" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle">接着 maintain</text>
+<rect x="220" y="110" width="160" height="96" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text class="mono" x="300.0" y="142" font-size="14" font-weight="800" fill="#1E40AF" text-anchor="middle">assemble</text>
+<text x="300.0" y="168" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">模型调用之前</text>
+<text x="300.0" y="188" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle">拼出这一轮的消息</text>
+<rect x="400" y="110" width="140" height="96" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text x="470.0" y="142" font-size="14" font-weight="800" fill="#475569" text-anchor="middle">模型调用</text>
+<rect x="560" y="110" width="160" height="96" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text class="mono" x="640.0" y="142" font-size="14" font-weight="800" fill="#1E40AF" text-anchor="middle">afterTurn</text>
+<text x="640.0" y="168" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">一轮结束</text>
+<text x="640.0" y="188" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle">存状态,接着 maintain</text>
+<line x1="200" y1="158" x2="218" y2="158" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<line x1="380" y1="158" x2="398" y2="158" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<line x1="542" y1="158" x2="558" y2="158" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<rect x="40" y="226" width="330" height="56" rx="12" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="205" y="250" font-size="13" font-weight="700" fill="#9A3412" text-anchor="middle">需要压缩时:compact</text>
+<text x="205" y="270" font-size="11.5" font-weight="400" fill="#7C2D12" text-anchor="middle">legacy 引擎把它交给运行时自己的压缩</text>
+<rect x="390" y="226" width="330" height="56" rx="12" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="555" y="250" font-size="13" font-weight="700" fill="#5B21B6" text-anchor="middle">开子 agent 前后</text>
+<text class="mono" x="555" y="270" font-size="11" font-weight="400" fill="#4C1D95" text-anchor="middle">prepareSubagentSpawn / onSubagentEnded</text>
+<rect x="40" y="310" width="330" height="188" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text x="58" y="338" font-size="14" font-weight="800" fill="#0F172A" text-anchor="start">内置 legacy 引擎</text>
+<text x="58" y="366" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">ingest:什么都不做</text>
+<text x="58" y="390" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">assemble:原样放行,</text>
+<text x="58" y="410" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">token 估算交给调用方</text>
+<text x="58" y="436" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">compact:交给运行时自己的压缩</text>
+<text x="58" y="468" font-size="12.5" font-weight="700" fill="#166534" text-anchor="start">默认就是它</text>
+<rect x="390" y="310" width="330" height="188" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text x="408" y="338" font-size="14" font-weight="800" fill="#0F172A" text-anchor="start">插件引擎(如 lossless-claw)</text>
+<text x="408" y="366" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">自己决定怎么拼窗口、怎么压缩、</text>
+<text x="408" y="390" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">怎么跨会话召回</text>
+<text x="408" y="424" font-size="12.5" font-weight="700" fill="#64748B" text-anchor="start">切换:</text>
+<text class="mono" x="450" y="424" font-size="12" font-weight="700" fill="#1E40AF" text-anchor="start">plugins.slots.contextEngine</text>
+<text x="408" y="452" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">同一次运行,只用一个引擎</text>
+<text x="408" y="478" font-size="12" font-weight="400" fill="#475569" text-anchor="start">接口里还有 commitTurn:幂等地提交一轮</text>
+<rect x="40" y="522" width="680" height="96" rx="12" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text x="58" y="550" font-size="13.5" font-weight="700" fill="#991B1B" text-anchor="start">引擎出错怎么办</text>
+<text x="58" y="576" font-size="12.5" font-weight="400" fill="#7F1D1D" text-anchor="start">assemble 抛错:这一轮退回原来的消息,只打一条警告。</text>
+<text x="58" y="600" font-size="12.5" font-weight="400" fill="#7F1D1D" text-anchor="start">其他方法抛错:隔离这个引擎,回退内置引擎;compact 例外,出错就抛出,不回退。</text>
+<rect x="40" y="642" width="680" height="132" rx="12" fill="#0F172A" stroke="#0F172A" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="64" y="672" font-size="14" font-weight="700" fill="#FBBF24" text-anchor="start">两个坑,文档自己写的</text>
+<text x="64" y="700" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">codex 运行时下,压缩归 Codex 原生,/compact 不走上下文引擎。</text>
+<text x="64" y="722" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">引擎自己声明不接管压缩(ownsCompaction: false),也不会自动退回内置压缩,</text>
+<text x="64" y="744" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">它的 compact() 必须自己实现对。</text>
+</svg>
