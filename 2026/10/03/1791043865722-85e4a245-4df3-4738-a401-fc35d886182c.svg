@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 890" width="760" height="890">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/></linearGradient>
+  <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C2410C"/><stop offset="100%" stop-color="#FB923C"/></linearGradient>
+  <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#15803D"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient>
+  <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6D28D9"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient>
+  <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#94A3B8"/></linearGradient>
+  <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0F766E"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient>
+  <filter id="shadowSm"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/></filter>
+  <marker id="arr_gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/></marker>
+  <marker id="arr_green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker>
+  <marker id="arr_blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker>
+  <marker id="arr_orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#F97316"/></marker>
+  <marker id="arr_red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker>
+</defs>
+<rect width="760" height="890" fill="#F8FAFC"/>
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">摘要要先验货,才能写进去</text>
+<text x="380" y="76" font-size="14" font-weight="400" fill="#64748B" text-anchor="middle">safeguard 模式(默认)下,每份摘要都要过这一关</text>
+<rect x="40" y="104" width="330" height="168" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text x="58" y="130" font-size="13.5" font-weight="700" fill="#1E40AF" text-anchor="start">摘要必须有这 5 个标题</text>
+<rect x="58" y="142" width="250" height="21" rx="10" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="183.0" y="157.0" font-size="11.5" font-weight="400" fill="#1E40AF" text-anchor="middle">## Decisions</text>
+<rect x="58" y="167" width="250" height="21" rx="10" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="183.0" y="182.0" font-size="11.5" font-weight="400" fill="#1E40AF" text-anchor="middle">## Open TODOs</text>
+<rect x="58" y="192" width="250" height="21" rx="10" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="183.0" y="207.0" font-size="11.5" font-weight="400" fill="#1E40AF" text-anchor="middle">## Constraints/Rules</text>
+<rect x="58" y="217" width="250" height="21" rx="10" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="183.0" y="232.0" font-size="11.5" font-weight="400" fill="#1E40AF" text-anchor="middle">## Pending user asks</text>
+<rect x="58" y="242" width="250" height="21" rx="10" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1"/>
+<text class="mono" x="183.0" y="257.0" font-size="11.5" font-weight="400" fill="#1E40AF" text-anchor="middle">## Exact identifiers</text>
+<rect x="390" y="104" width="330" height="168" rx="12" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text x="408" y="130" font-size="13.5" font-weight="700" fill="#9A3412" text-anchor="start">审计查这 5 件事</text>
+<text x="408" y="158" font-size="12" font-weight="400" fill="#7C2D12" text-anchor="start">● 缺标题</text>
+<text x="408" y="182" font-size="12" font-weight="400" fill="#7C2D12" text-anchor="start">● 标题重复</text>
+<text x="408" y="206" font-size="12" font-weight="400" fill="#7C2D12" text-anchor="start">● 精确标识符没带出来(默认 strict)</text>
+<text x="408" y="230" font-size="12" font-weight="400" fill="#7C2D12" text-anchor="start">● 最新的用户请求没被体现</text>
+<text x="408" y="254" font-size="12" font-weight="400" fill="#7C2D12" text-anchor="start">● 已保留的请求被误标成待办</text>
+<rect x="190" y="296" width="380" height="46" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="380" y="324" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">① 按这 5 个标题生成摘要</text>
+<line x1="380" y1="344" x2="380" y2="368" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<rect x="190" y="370" width="380" height="46" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="380" y="398" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">② 审计</text>
+<line x1="380" y1="418" x2="380" y2="442" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<g filter="url(#shadowSm)"><polygon points="380,444 500,494 380,544 260,494" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/></g>
+<text x="380" y="499" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">通过?</text>
+<line x1="500" y1="494" x2="566" y2="494" stroke="#22C55E" stroke-width="2" marker-end="url(#arr_green)"/>
+<text x="533" y="486" font-size="12" font-weight="700" fill="#16A34A" text-anchor="middle">是</text>
+<rect x="568" y="470" width="152" height="48" rx="12" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="644" y="499" font-size="13" font-weight="700" fill="#166534" text-anchor="middle">写入转录</text>
+<line x1="380" y1="546" x2="380" y2="580" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<text x="392" y="568" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">否</text>
+<g filter="url(#shadowSm)"><polygon points="380,582 510,634 380,686 250,634" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/></g>
+<text x="380" y="632" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">还有重试次数?</text>
+<text x="380" y="652" font-size="10.5" font-weight="400" fill="#64748B" text-anchor="middle">默认重试 1 次,最多 3 次</text>
+<line x1="250" y1="634" x2="160" y2="634" stroke="#F97316" stroke-width="2"/>
+<line x1="160" y1="634" x2="160" y2="319" stroke="#F97316" stroke-width="2"/>
+<line x1="160" y1="319" x2="188" y2="319" stroke="#F97316" stroke-width="2" marker-end="url(#arr_orange)"/>
+<text x="100" y="626" font-size="11.5" font-weight="700" fill="#9A3412" text-anchor="middle">是:带着</text>
+<text x="100" y="644" font-size="11.5" font-weight="700" fill="#9A3412" text-anchor="middle">纠正要求</text>
+<text x="100" y="662" font-size="11.5" font-weight="700" fill="#9A3412" text-anchor="middle">重新生成</text>
+<line x1="380" y1="688" x2="380" y2="718" stroke="#EF4444" stroke-width="2.5" marker-end="url(#arr_red)"/>
+<text x="392" y="708" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="start">否</text>
+<rect x="130" y="720" width="500" height="62" rx="12" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text x="380" y="748" font-size="14" font-weight="700" fill="#991B1B" text-anchor="middle">取消这次压缩:什么都不写,保留原历史</text>
+<text class="mono" x="380" y="770" font-size="11.5" font-weight="400" fill="#B91C1C" text-anchor="middle">代码里是 return { cancel: true }</text>
+<rect x="40" y="806" width="680" height="60" rx="12" fill="#0F172A" stroke="#0F172A" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="64" y="836" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">旧摘要不叠加:第二次压缩把旧摘要和新消息一起重新提炼,去掉过时的重复细节。</text>
+</svg>
