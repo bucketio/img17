@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1440" width="750" height="1440" role="img" aria-labelledby="ms-title ms-desc">
+<title id="ms-title">行动提出者，与出网审核者分开</title>
+<desc id="ms-desc">依据 Meta 官方披露重绘的教学过程示意，以发送行程确认邮件为例。Muse 与独立 Sentinel 运行在同一台专属虚拟机内，并在系统级隔离。Muse 先起草邮件并提出请求，Sentinel 核对权限和出网请求；本例发送邮件属于敏感操作，询问用户并收到确认后才批准出网，用户可查看活动记录。普通请求可由 Sentinel 审核放行，仅在需要时询问用户。所有出网操作都需要 Sentinel 批准；这不表示 Sentinel 永不出错，也不是实际内部 API 路径或性能测试。</desc>
+<defs>
+<marker id="ms-arrow-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#C9D4D8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ms-arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#138A84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ms-arrow-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#F28C45" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs><g font-family="'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+<rect x="0" y="0" width="750" height="1440" rx="0" fill="#FAF8F2" stroke="none" stroke-width="2" />
+<text x="36" y="63" font-size="40" fill="#17324D" font-weight="700" text-anchor="start" >行动提出者，与出网审核者分开</text>
+<text x="36" y="110" font-size="32" fill="#647585" font-weight="500" text-anchor="start" >本图以发送一封行程确认邮件为例</text>
+<rect x="36" y="139" width="158" height="60" rx="14" fill="#EDF1F1" stroke="none" stroke-width="2" />
+<text x="115" y="180" font-size="32" fill="#647585" font-weight="600" text-anchor="middle" >① 起草</text>
+<g opacity="0"><animate attributeName="opacity" values="1;0;0;0;1" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="36" y="139" width="158" height="60" rx="14" fill="#138A84" stroke="none" stroke-width="2" />
+<text x="115" y="180" font-size="32" fill="#FFFFFF" font-weight="700" text-anchor="middle" >① 起草</text>
+</g>
+<rect x="210" y="139" width="158" height="60" rx="14" fill="#EDF1F1" stroke="none" stroke-width="2" />
+<text x="289" y="180" font-size="32" fill="#647585" font-weight="600" text-anchor="middle" >② 审核</text>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0;0;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="210" y="139" width="158" height="60" rx="14" fill="#138A84" stroke="none" stroke-width="2" />
+<text x="289" y="180" font-size="32" fill="#FFFFFF" font-weight="700" text-anchor="middle" >② 审核</text>
+</g>
+<rect x="384" y="139" width="158" height="60" rx="14" fill="#EDF1F1" stroke="none" stroke-width="2" />
+<text x="463" y="180" font-size="32" fill="#647585" font-weight="600" text-anchor="middle" >③ 确认</text>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="384" y="139" width="158" height="60" rx="14" fill="#F28C45" stroke="none" stroke-width="2" />
+<text x="463" y="180" font-size="32" fill="#FFFFFF" font-weight="700" text-anchor="middle" >③ 确认</text>
+</g>
+<rect x="558" y="139" width="158" height="60" rx="14" fill="#EDF1F1" stroke="none" stroke-width="2" />
+<text x="637" y="180" font-size="32" fill="#647585" font-weight="600" text-anchor="middle" >④ 放行</text>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="558" y="139" width="158" height="60" rx="14" fill="#138A84" stroke="none" stroke-width="2" />
+<text x="637" y="180" font-size="32" fill="#FFFFFF" font-weight="700" text-anchor="middle" >④ 放行</text>
+</g>
+<rect x="36" y="234" width="678" height="603" rx="22" fill="#F0F3F2" stroke="#C9D4D8" stroke-width="2" />
+<text x="64" y="283" font-size="36" fill="#17324D" font-weight="700" text-anchor="start" >同一台专属虚拟机（VM）</text>
+<rect x="72" y="318" width="606" height="144" rx="16" fill="#FFFFFF" stroke="#C9D4D8" stroke-width="2" />
+<text x="96" y="366" font-size="36" fill="#17324D" font-weight="700" text-anchor="start" >Muse｜提出行动</text>
+<text x="96" y="419" font-size="34" fill="#17324D" font-weight="500" text-anchor="start" >起草：行程确认邮件</text>
+<g opacity="0"><animate attributeName="opacity" values="1;0;0;0;1" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="72" y="318" width="606" height="144" rx="16" fill="none" stroke="#138A84" stroke-width="4" />
+</g>
+<path d="M 72 526 H 678" fill="none" stroke="#647585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 8"/>
+<rect x="88" y="503" width="209" height="45" rx="0" fill="#F0F3F2" stroke="none" stroke-width="2" />
+<text x="96" y="536" font-size="32" fill="#647585" font-weight="600" text-anchor="start" >系统级隔离</text>
+<path d="M 375 468 V 576" fill="none" stroke="#138A84" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ms-arrow-teal)" />
+<text x="408" y="515" font-size="32" fill="#138A84" font-weight="600" text-anchor="start" >发送请求</text>
+<g transform="translate(375 473)"><g opacity="0">
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 91;0 91" keyTimes="0;0.11875;0.20625;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.11274999999999999;0.11875;0.20625;0.21825;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="-7" y="-7" width="14" height="14" rx="4" fill="#138A84" stroke="none" stroke-width="2" />
+</g>
+</g>
+<rect x="72" y="588" width="606" height="176" rx="16" fill="#FFFFFF" stroke="#C9D4D8" stroke-width="2" />
+<text x="96" y="636" font-size="36" fill="#17324D" font-weight="700" text-anchor="start" >Sentinel｜独立审核</text>
+<text x="96" y="686" font-size="34" fill="#17324D" font-weight="500" text-anchor="start" >核对权限与出网请求</text>
+<text x="96" y="735" font-size="32" fill="#138A84" font-weight="600" text-anchor="start" >所有出网操作，都须批准</text>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0;0;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="72" y="588" width="606" height="176" rx="16" fill="none" stroke="#138A84" stroke-width="4" />
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="72" y="588" width="606" height="176" rx="16" fill="none" stroke="#138A84" stroke-width="4" />
+</g>
+<path d="M 132 770 V 918" fill="none" stroke="#F28C45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ms-arrow-orange)" opacity="0.4"/>
+<path d="M 310 918 V 770" fill="none" stroke="#F28C45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ms-arrow-orange)" opacity="0.4"/>
+<text x="219" y="875" font-size="30" fill="#F28C45" font-weight="600" text-anchor="middle" >询问 / 确认</text>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0;0;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<path d="M 132 770 V 918" fill="none" stroke="#F28C45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ms-arrow-orange)" />
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<path d="M 310 918 V 770" fill="none" stroke="#F28C45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ms-arrow-orange)" />
+</g>
+<g transform="translate(132 778)"><g opacity="0">
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 132;0 132" keyTimes="0;0.375;0.475;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.369;0.375;0.475;0.487;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="-7" y="-7" width="14" height="14" rx="4" fill="#F28C45" stroke="none" stroke-width="2" />
+</g>
+</g>
+<g transform="translate(310 912)"><g opacity="0">
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -132;0 -132" keyTimes="0;0.5625;0.66875;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5565;0.5625;0.66875;0.68075;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="-7" y="-7" width="14" height="14" rx="4" fill="#F28C45" stroke="none" stroke-width="2" />
+</g>
+</g>
+<path d="M 650 770 V 918" fill="none" stroke="#138A84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ms-arrow-teal)" opacity="0.3"/>
+<text x="630" y="875" font-size="32" fill="#138A84" font-weight="600" text-anchor="end" >批准出网</text>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<path d="M 650 770 V 918" fill="none" stroke="#138A84" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ms-arrow-teal)" />
+</g>
+<g transform="translate(650 778)"><g opacity="0">
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 132;0 132" keyTimes="0;0.76875;0.84375;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.76275;0.76875;0.84375;0.85575;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="-7" y="-7" width="14" height="14" rx="4" fill="#138A84" stroke="none" stroke-width="2" />
+</g>
+</g>
+<rect x="36" y="932" width="324" height="180" rx="16" fill="#FFF4E8" stroke="#F28C45" stroke-width="2" />
+<text x="198" y="979" font-size="36" fill="#17324D" font-weight="700" text-anchor="middle" >用户</text>
+<g opacity="1"><animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="198" y="1032" font-size="34" fill="#17324D" font-weight="600" text-anchor="middle" >等待本人确认</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="198" y="1032" font-size="34" fill="#F28C45" font-weight="700" text-anchor="middle" >确认发送</text>
+</g>
+<text x="198" y="1084" font-size="30" fill="#647585" font-weight="500" text-anchor="middle" >本例：敏感发送</text>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="36" y="932" width="324" height="180" rx="16" fill="none" stroke="#F28C45" stroke-width="4" />
+</g>
+<rect x="400" y="932" width="314" height="180" rx="16" fill="#E9F4F1" stroke="#138A84" stroke-width="2" />
+<text x="557" y="979" font-size="31" fill="#17324D" font-weight="700" text-anchor="middle" >互联网 / 邮件服务</text>
+<g opacity="1"><animate attributeName="opacity" values="1;0;1" keyTimes="0;0.859375;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="557" y="1032" font-size="34" fill="#647585" font-weight="600" text-anchor="middle" >尚未发送</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.859375;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="557" y="1032" font-size="34" fill="#138A84" font-weight="700" text-anchor="middle" >本次邮件已发送</text>
+</g>
+<text x="557" y="1084" font-size="29" fill="#647585" font-weight="500" text-anchor="middle" >批准后才接收请求</text>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="400" y="932" width="314" height="180" rx="16" fill="none" stroke="#138A84" stroke-width="4" />
+</g>
+<rect x="36" y="1153" width="678" height="112" rx="16" fill="#FFFFFF" stroke="#C9D4D8" stroke-width="2" />
+<text x="60" y="1198" font-size="33" fill="#17324D" font-weight="700" text-anchor="start" >活动记录 · 用户可查看</text>
+<g opacity="1"><animate attributeName="opacity" values="1;0;1" keyTimes="0;0.90625;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="60" y="1240" font-size="32" fill="#647585" font-weight="500" text-anchor="start" >本次发送：提议 → 审核 → 确认</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.90625;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="60" y="1240" font-size="32" fill="#138A84" font-weight="600" text-anchor="start" >本次发送：用户确认后已执行</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.90625;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<rect x="36" y="1153" width="678" height="112" rx="16" fill="none" stroke="#138A84" stroke-width="4" />
+</g>
+<text x="375" y="1312" font-size="32" fill="#17324D" font-weight="600" text-anchor="middle" >普通请求可审核放行，按需询问用户</text>
+<text x="375" y="1358" font-size="30" fill="#647585" font-weight="500" text-anchor="middle" >凭证可授权使用，Muse 模型不可见</text>
+<text x="375" y="1407" font-size="27" fill="#647585" font-weight="500" text-anchor="middle" >依据官方披露重绘 · 教学流程，非内部 API 路径</text>
+</g></svg>
