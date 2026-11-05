@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="1430" viewBox="0 0 750 1430" role="img" aria-labelledby="budget-title budget-desc">
+<title id="budget-title">同样限制最大输出变化，方向 2 为什么还能多走？</title>
+<desc id="budget-desc">两路独立方向的局部教学例子，梯度为对角矩阵 diag(9,1)，沿下降方向更新 ΔW = -diag(a,b)。固定单位长度的输入 x，输出变化为 Δy = ΔW x。以 η 为单位，直接缩放梯度的两个半轴为 1 和 1/9；理想 Muon 的两个半轴为 1 和 1。动画固定水平半轴和虚线预算圆，只扩展垂直半轴。两种更新的最大输出变化都是 η。局部一阶预测下降量分别为 9η+η/9，约 9.11η，以及 9η+η，为 10η。此图不是实际训练损失曲线。周期 16 秒。</desc>
+<rect width="750" height="1430" fill="#FAF8F2"/>
+<g font-family="'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif" fill="#17324D">
+<text x="36" y="61" font-size="40" fill="#17324D" font-weight="700">同样限制最大输出变化，</text>
+<text x="36" y="123" font-size="40" fill="#17324D" font-weight="700">方向 2 为什么还能多走？</text>
+<text x="36" y="180" font-size="32" fill="#60727E">两路独立方向的教学示例</text>
+<rect x="28" y="207" width="694" height="78" rx="20" fill="#FFFFFF" />
+<text x="375" y="247" font-size="34" fill="#17324D" font-weight="700" text-anchor="middle">梯度强度：方向 1 = 9，方向 2 = 1</text>
+<rect x="28" y="301" width="694" height="519" rx="20" fill="#FFFFFF" />
+<text x="375" y="349" font-size="34" fill="#17324D" font-weight="700" text-anchor="middle">更新步幅，以 η 为单位</text>
+<text x="375" y="397" font-size="32" fill="#D97A3B" text-anchor="middle">虚线圆：最大输出变化上限为 1</text>
+<text x="122" y="486" font-size="32" fill="#60727E" text-anchor="middle">输入 x</text>
+<g transform="translate(122 589)">
+<circle r="64" fill="#FAF8F2" stroke="#60727E" stroke-width="3"/>
+<path d="M -64 0 H 64 M 0 -64 V 64" stroke="#DBE4E0" stroke-width="2"/>
+<path d="M 0 0 L 45.2548 -45.2548" stroke="#60727E" stroke-width="3"/>
+<circle cx="45.2548" cy="-45.2548" r="5" fill="#60727E"/>
+</g>
+<path d="M 210 589 H 294 M 284 580 L 295 589 L 284 598" fill="none" stroke="#17324D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="251" y="549" font-size="36" fill="#17324D" font-weight="700" text-anchor="middle">ΔW</text>
+<text x="122" y="711" font-size="32" fill="#60727E" text-anchor="middle">‖x‖ = 1</text>
+<text x="465" y="440" font-size="32" fill="#60727E" text-anchor="middle">方向 2</text>
+<text x="619" y="600" font-size="32" fill="#60727E">方向 1</text>
+<g transform="translate(465 589)">
+<path d="M -140 0 H 140 M 0 -140 V 140" stroke="#DBE4E0" stroke-width="2"/>
+<g id="budget-map" transform="scale(1 0.111111111111)">
+<animateTransform attributeName="transform" type="scale" values="1 0.111111111111;1 0.111111111111;1 1;1 1;1 0.111111111111;1 0.111111111111" keyTimes="0;0.25;0.5;0.8125;0.9375;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<circle id="budget-shape" r="140" fill="#E9F5F0" stroke="#138A84" stroke-width="2" vector-effect="non-scaling-stroke"/>
+<line id="budget-weak-radius" x1="0" y1="0" x2="0" y2="-140" stroke="#138A84" stroke-width="6"/>
+</g>
+<circle id="budget-limit" r="140" fill="none" stroke="#D97A3B" stroke-width="3" stroke-dasharray="9 7"/>
+<line id="budget-strong-radius" x1="0" y1="0" x2="140" y2="0" stroke="#138A84" stroke-width="6"/>
+<circle cx="140" cy="0" r="5" fill="#138A84"/>
+<g transform="translate(0 -15.55555555554)">
+<animateTransform attributeName="transform" type="translate" values="0 -15.55555555554;0 -15.55555555554;0 -140;0 -140;0 -15.55555555554;0 -15.55555555554" keyTimes="0;0.25;0.5;0.8125;0.9375;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+<circle id="budget-weak-tip" r="5" fill="#138A84"/>
+</g>
+<circle r="4" fill="#17324D"/>
+</g>
+<text x="570" y="575" font-size="32" fill="#138A84" font-weight="700" text-anchor="middle">1</text>
+<text x="465" y="783" font-size="34" fill="#17324D" font-weight="700" text-anchor="middle">输出变化 Δy / η</text>
+<rect x="28" y="841" width="694" height="104" rx="20" fill="#E9F5F0" />
+<g id="budget-state-direct" opacity="1"><animate attributeName="opacity" values="1;0;0;0;1;1" keyTimes="0;0.25;0.5;0.8125;0.9375;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="375" y="904" font-size="35" fill="#17324D" font-weight="700" text-anchor="middle">直接缩放梯度：1、1/9</text>
+</g>
+<g id="budget-state-expand" opacity="0"><animate attributeName="opacity" values="0;1;0;0;0;0" keyTimes="0;0.25;0.5;0.8125;0.9375;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="375" y="904" font-size="35" fill="#138A84" font-weight="700" text-anchor="middle">方向 1 不动，方向 2 逐渐加大</text>
+</g>
+<g id="budget-state-muon" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.25;0.5;0.8125;0.9375;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="375" y="904" font-size="35" fill="#138A84" font-weight="700" text-anchor="middle">理想 Muon：1、1</text>
+</g>
+<g id="budget-state-reset" opacity="0"><animate attributeName="opacity" values="0;0;0;1;0;0" keyTimes="0;0.25;0.5;0.8125;0.9375;1" calcMode="discrete" dur="16s" begin="0s" repeatCount="indefinite"/>
+<text x="375" y="904" font-size="35" fill="#60727E" font-weight="700" text-anchor="middle">回到起点，再看一次</text>
+</g>
+<text x="375" y="976" font-size="32" fill="#60727E" text-anchor="middle">a、b：方向 1、2 的更新步幅</text>
+<text x="375" y="1031" font-size="34" fill="#17324D" font-weight="700" text-anchor="middle">局部一阶预测下降量 = 9a + b</text>
+<rect x="28" y="1050" width="337" height="239" rx="20" fill="#FFF0E1" />
+<rect x="385" y="1050" width="337" height="239" rx="20" fill="#E9F5F0" />
+<text x="196.5" y="1099" font-size="34" fill="#D97A3B" font-weight="700" text-anchor="middle">直接缩放梯度</text>
+<text x="196.5" y="1151" font-size="32" fill="#17324D" text-anchor="middle">a = η，b = η/9</text>
+<text x="196.5" y="1202" font-size="36" fill="#17324D" text-anchor="middle">9η + η/9</text>
+<text x="196.5" y="1259" font-size="38" fill="#D97A3B" font-weight="700" text-anchor="middle">≈ 9.11η</text>
+<text x="553.5" y="1099" font-size="34" fill="#138A84" font-weight="700" text-anchor="middle">理想 Muon</text>
+<text x="553.5" y="1151" font-size="32" fill="#17324D" text-anchor="middle">a = η，b = η</text>
+<text x="553.5" y="1202" font-size="36" fill="#17324D" text-anchor="middle">9η + η</text>
+<text x="553.5" y="1259" font-size="38" fill="#138A84" font-weight="700" text-anchor="middle">= 10η</text>
+<text x="375" y="1341" font-size="35" fill="#17324D" font-weight="700" text-anchor="middle">扩展方向 2，最大值仍是 η</text>
+<text x="375" y="1396" font-size="32" fill="#60727E" text-anchor="middle">局部预测，不代表实际训练必然下降</text>
+</g></svg>
