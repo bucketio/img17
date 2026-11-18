@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="760" height="330" font-family="PingFang SC, Noto Sans SC, Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="conf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#006241"/>
+      <stop offset="60%" stop-color="#CBA258"/>
+      <stop offset="100%" stop-color="#C2553D"/>
+    </linearGradient>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9aa8a2"/>
+    </marker>
+  </defs>
+  <rect width="760" height="330" fill="#fff"/>
+
+  <title>以证据状态组织分级可信</title>
+  <g text-anchor="middle">
+    <rect x="14" y="40" width="224" height="200" rx="10" fill="#E7F2EC" stroke="#9bc6b4"/>
+    <text x="126" y="76" font-size="20" font-weight="700" fill="#006241">有标准依据</text>
+    <text x="126" y="112" font-size="13" fill="#3d4d47">复用企业定义与取数依据</text>
+    <text x="126" y="138" font-size="13" fill="#3d4d47">核对本次问题的适用范围</text>
+    <text x="126" y="186" font-size="13" font-weight="700" fill="#006241">依据清楚，仍需要验证</text>
+    <text x="126" y="211" font-size="12" fill="#3d4d47">不是绝对正确的免检标签</text>
+
+    <rect x="268" y="40" width="224" height="200" rx="10" fill="#FBF4E4" stroke="#E4CD95"/>
+    <text x="380" y="76" font-size="20" font-weight="700" fill="#A27B2C">需要受控推导</text>
+    <text x="380" y="112" font-size="13" fill="#3d4d47">在已有证据上组织新分析</text>
+    <text x="380" y="138" font-size="13" fill="#3d4d47">解释新增假设与比较条件</text>
+    <text x="380" y="186" font-size="13" font-weight="700" fill="#A27B2C">区分事实、推测与待核实项</text>
+    <text x="380" y="211" font-size="12" fill="#3d4d47">不把推导包装成现成标准</text>
+
+    <rect x="522" y="40" width="224" height="200" rx="10" fill="#F8E9E4" stroke="#E0B2A5"/>
+    <text x="634" y="76" font-size="20" font-weight="700" fill="#C2553D">含义尚未确认</text>
+    <text x="634" y="112" font-size="13" fill="#3d4d47">存在不同合理解释</text>
+    <text x="634" y="138" font-size="13" fill="#3d4d47">把影响结论的选择交回业务</text>
+    <text x="634" y="186" font-size="13" font-weight="700" fill="#C2553D">明确以后再继续</text>
+    <text x="634" y="211" font-size="12" fill="#3d4d47">澄清是分析的一部分</text>
+  </g>
+
+  <rect x="14" y="262" width="732" height="10" rx="5" fill="url(#conf)"/>
+  <text x="126" y="294" text-anchor="middle" font-size="12" fill="#006241">复用依据</text>
+  <text x="380" y="294" text-anchor="middle" font-size="12" fill="#A27B2C">让推导边界可见</text>
+  <text x="634" y="294" text-anchor="middle" font-size="12" fill="#C2553D">先建立共识</text>
+  <text x="380" y="320" text-anchor="middle" font-size="12" fill="#6b7280">分级可信不是模型自报置信度，而是让答案的证据与适用范围对业务可见</text>
+</svg>
